@@ -10,9 +10,8 @@ app.use(bodyParser.json());
 const PORT = 5000;
 const registeredUsersPath = "./registeredUsers.json";
 
-let registeredUsers = []; // Move the declaration here
+let registeredUsers = []; 
 
-// Read existing users from the file at server start
 try {
   const data = fs.readFileSync(registeredUsersPath);
   registeredUsers = JSON.parse(data);
