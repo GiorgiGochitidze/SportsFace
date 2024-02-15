@@ -17,7 +17,7 @@ const LogIn = () => {
 
     setError(""); // Reset error message
 
-    fetch("http://localhost:5000/logIn", {
+    fetch("https://sportsface.onrender.com/logIn", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ userName, surName, password }),
